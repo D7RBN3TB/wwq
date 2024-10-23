@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حب لجنى</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #2c2c2c; /* خلفية داكنة */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            color: #ffffff; /* لون النص أبيض */
+            overflow: hidden;
+        }
+        .heart {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            transform: rotate(-45deg);
+            margin: 20px;
+            animation: pulse 1.5s infinite;
+        }
+        .heart::before,
+        .heart::after {
+            content: '';
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .heart::before {
+            top: -50px;
+            left: 0;
+        }
+        .heart::after {
+            left: 50px;
+            top: 0;
+        }
+        h1 {
+            margin-top: 20px;
+            color: #e63946;
+            font-size: 2.5em;
+            animation: fadeIn 2s ease-in;
+        }
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .teddy-bear {
+            width: 100px;
+            height: 120px;
+            background-color: #8B4513; /* لون بني للدب */
+            border-radius: 20px;
+            position: relative;
+            margin-top: 20px;
+        }
+        .teddy-bear::before,
+        .teddy-bear::after {
+            content: '';
+            width: 30px;
+            height: 30px;
+            background-color: #8B4513;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .teddy-bear::before {
+            top: -15px;
+            left: -15px; /* أذن اليسار */
+        }
+        .teddy-bear::after {
+            top: -15px;
+            right: -15px; /* أذن اليمين */
+        }
+        .rose {
+            width: 10px;
+            height: 60px;
+            background-color: green;
+            position: relative;
+            margin: 10px;
+        }
+        .rose::before {
+            content: '';
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            top: -10px;
+            left: -5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="heart"></div>
+    <h1>أحبك يا جنى ❤️</h1>
+    <div class="teddy-bear"></div>
+    <div class="rose"></div>
+    <div class="rose"></div>
+    <div class="rose"></div>
+</body>
+</html>

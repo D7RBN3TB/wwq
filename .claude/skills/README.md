@@ -8,6 +8,7 @@ adapted from the MIT-licensed montage plugin
 | --- | --- |
 | `skills/ingest-video/` | Ingest a video from a Google Drive / public URL and poll it through the pipeline |
 | `skills/create-moment/` | Turn an ingested video into an editable moment (clip) and return the editor link |
+| `skills/katana-montage/` | Cut the sword/katana action in an ingested video into a hook → build → climax `hook_montage` moment |
 | `../agents/clip-scout.md` | Read-only agent that proposes clip candidates with timestamps |
 
 The skills call tools on the Montage MCP server, configured in the repo-root
